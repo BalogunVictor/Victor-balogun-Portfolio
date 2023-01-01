@@ -1,0 +1,65 @@
+@keyframes moving {
+
+  0%{
+    transform:translateY(10px);
+    
+  }
+  100%{
+    transform:translateY(0px);
+  
+  }
+}
+
+
+
+.main{
+ width: 100%;
+ margin-bottom: 30px;
+
+ 
+
+  .mainWrapper{
+    text-align: center;
+    justify-content: center;
+
+      .mainHeader{
+      font-family: 'Abril Fatface', cursive;
+      font-size: 120px;
+      }
+
+      .maintext{
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        line-height: 25px;
+        
+        h1{
+          margin-bottom: 25px;
+          font-size: 50px;
+        }
+        .arrowDown{
+          animation: moving 1.5s linear infinite;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+      .options{
+        margin-bottom: 25px;
+        align-items: center;
+
+        .option{
+          text-decoration: none;
+          padding: 0 10px;
+          margin:0 10px;
+          border: none;
+          border-radius: 5px;
+          background-color: white;
+          height: 50px;
+          transition: all 0.3s ease-in-out;
+          color: black;
+          font-weight: 500;
+          font-size: large;
+        }
+      }
+    }  
+  }
+ 

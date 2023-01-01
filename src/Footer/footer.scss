@@ -1,0 +1,35 @@
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  .footerWrapper{
+  margin-right: 50px;
+
+   
+
+    .icons{
+      margin-bottom: 20px;
+
+      a{
+        text-decoration: none;
+        cursor: pointer;
+
+      .icon{
+        border: 2px solid black;
+        font-size: 40px;
+        border-radius: 50%;
+        color: black;
+        box-shadow: -1px 0px 4px 4px black;
+        padding: 2px 2px;
+        margin-bottom: 10px;
+      }
+    } 
+  }
+    .vl{
+      border-right: 5px solid black;
+      height: 100px;
+      margin-right: 12px;
+    } 
+  }
+}
