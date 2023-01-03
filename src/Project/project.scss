@@ -1,0 +1,49 @@
+.project{
+  width: 100%;
+
+  .projectWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 250px;
+
+    .projectImage{
+      height: 180px;
+      width: 350px;
+
+      img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .projectInfo{
+      line-height: 30px;
+      
+
+      h1{
+        padding-bottom: 20px;
+      }
+    }
+
+    .viewApp{
+      margin-top: 50px;
+      align-items: center;
+
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    }
+    
+  }
+  .projectHr{
+    height: 2px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: black;
+    justify-content: space-around;
+    border: none;
+  }
+}

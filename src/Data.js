@@ -1,4 +1,4 @@
-export const Videos = [
+export const projects = [
   {
     id:1,
     images: "https://img.youtube.com/vi/YpTmcCBBdTE/maxresdefault.jpg",
