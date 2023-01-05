@@ -5,7 +5,7 @@ import {RiMenu4Line} from 'react-icons/ri';
 import {GrClose} from 'react-icons/gr'
 
 const Header = () => {
-  
+
   const [clicked, setClicked] = useState(false);
 
   const handleClicked = () => {
@@ -17,12 +17,14 @@ const Header = () => {
       <div className="headerWrapper">
         <div className="menuIcon" onClick={handleClicked}>
           <div className="menuIconWrapper">
-          {clicked ? <GrClose /> : <RiMenu4Line />}
+          {clicked ? <GrClose  className='close'/> : <RiMenu4Line className='open' />}
           </div>
         </div>
+        <div className="links">
         <Link  to="/" className="link">Home</Link>
         <Link to="/projects" className="link">Projects</Link>
         <Link to="/aboutme" className="link">About Me</Link>
+        </div>
       </div>
       <hr className='headerHr' />
     </div>
