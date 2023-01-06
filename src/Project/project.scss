@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 250px;
+    height: 300px;
 
     .projectImage{
       height: 180px;
@@ -26,6 +26,8 @@
       }
 
       .about,.viewApp {
+        display: block;
+        width: 700px;
         font-weight: 500;
         font-size: 20px;
       }
