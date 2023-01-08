@@ -16,17 +16,20 @@ const Header = () => {
     <div className="header">
       <div className="headerWrapper">
 
-        <Link to="/" className="logo"> victor.Balogun /> </Link>
+        <Link to="/" className="logo"> victor.Balogun/></Link>
 
-        <div className="menuIcon" onClick={handleClicked}>
-          <div className="menuIconWrapper">
-          {clicked ? <GrClose  className='close'/> : <RiMenu4Line className='open' />}
+        <div className={clicked ? "nav active" : "nav"}>
+
+          <div className="menuIcon" onClick={handleClicked}>
+            <div className="menuIconWrapper">
+            {clicked ? <GrClose  className='close'/> : <RiMenu4Line className='open' />}
+            </div>
           </div>
-        </div>
-        <div className={clicked ? "links active" : "links"} >
-        <Link  to="/" className="link">Home</Link>
-        <Link to="/projects" className="link">Projects</Link>
-        <Link to="/aboutme" className="link">About Me</Link>
+          <div className="links">
+            <Link  to="/" className="link">Home</Link>
+            <Link to="/projects" className="link">Projects</Link>
+            <Link to="/aboutme" className="link">About Me</Link>
+          </div>
         </div>
       </div>
       <hr className='headerHr' />
