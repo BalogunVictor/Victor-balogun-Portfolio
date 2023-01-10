@@ -16,7 +16,7 @@ const Header = () => {
     <div className="header">
       <div className="headerWrapper">
 
-        <Link to="/" className="logo"> victor.Balogun/></Link>
+        <Link  to="/" className="logo"> victor.Balogun/></Link>
 
         <div className={clicked ? "nav active" : "nav"}>
 
@@ -25,10 +25,10 @@ const Header = () => {
             {clicked ? <GrClose  className='close'/> : <RiMenu4Line className='open' />}
             </div>
           </div>
-          <div className="links">
-            <Link  to="/" className="link">Home</Link>
+          <div onClick={handleClicked} className="links">
+            <Link to="/" className="link">Home</Link>
             <Link to="/projects" className="link">Projects</Link>
-            <Link to="/aboutme" className="link">About Me</Link>
+            <Link  to="/aboutme" className="link">About Me</Link>
           </div>
         </div>
       </div>
