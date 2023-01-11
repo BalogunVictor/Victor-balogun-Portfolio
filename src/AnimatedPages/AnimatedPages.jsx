@@ -6,7 +6,7 @@ import Resume from '../Resume/Resume';
 import { AnimatePresence } from "framer-motion";
 
 const AnimatedPages = () => {
-  const location = useLocation();
+  const location = useLocation(); 
   return (
       <AnimatePresence>
         <Routes location={location} key={location.pathname} >

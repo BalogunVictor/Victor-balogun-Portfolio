@@ -28,6 +28,7 @@ const Header = () => {
           <div onClick={handleClicked} className="links">
             <Link to="/" className="link">Home</Link>
             <Link to="/projects" className="link">Projects</Link>
+            <Link to="/resume" className="link">Resumé</Link>
             <Link  to="/aboutme" className="link">About Me</Link>
           </div>
         </div>
