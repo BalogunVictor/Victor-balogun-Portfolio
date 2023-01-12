@@ -1,3 +1,18 @@
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
+}
 
 .main{
  width: 100%;
@@ -6,28 +21,41 @@
   .mainWrapper{
     text-align: center;
     justify-content: center;
+    padding: 80px 0;
 
       .mainHeader{
       font-family: 'Playfair Display', serif;
       font-weight: 900;
       font-size: 120px;
+
+      @include laptop{
+        font-size: 90px;
+      }
+
       }
 
       .maintext{
         text-align: center;
         justify-content: center;
         margin-bottom: 25px;
-        line-height: 25px;
         font-weight: 500;
+        @include laptop{
+          margin-bottom: 35px;
+        }
+
         
         
         h1{
           margin-bottom: 25px;
           font-size: 50px;
+          @include laptop{
+            font-size: 40px;
+          }
         }
 
         p{
           font-size: 20px;
+          line-height: 35px;
         }
        
       }

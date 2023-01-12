@@ -1,6 +1,26 @@
 *{
   background-color: linear-gradient(137deg, rgba(197,186,170,1) 29%, rgba(128,109,97,1) 100%);
+}
+
+.app{
   font-family: 'Playfair Display', serif;
   color: black;
 
+  .header{
+    background-color: linear-gradient(137deg, rgba(197,186,170,1) 29%, rgba(128,109,97,1) 100%);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 99999;
+  }
+
+  .footer{
+    position: fixed;
+    width: 300px;
+    height: 280px;
+    bottom: 0;
+    right: 0;
+  }
+
 }
+

@@ -8,13 +8,15 @@ import "./App.scss";
 function App() {
 
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
-        <div className="main">
-        <Header />
-        <AnimatedPages />
+        <div className="header">
+          <Header />
         </div>
-        <div className="Footer">
+        <div className="main">
+          <AnimatedPages />
+        </div>
+        <div className="footer">
           <Footer/>
         </div>
       </BrowserRouter>

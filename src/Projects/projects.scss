@@ -1,3 +1,19 @@
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
 .projects{
   width: 100%;
 
@@ -10,6 +26,10 @@
       padding: 30px 0;
       font-weight: 900;
       font-size: 50px;
+
+      @include laptop{
+        font-size: 40px;
+      }
     }
 
   }

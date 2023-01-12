@@ -27,7 +27,7 @@ const AboutMe = () => {
         <p>Hi! my name is Victor Balogun, I'm a frontend developer based in Lagos, Nigeria.I've worked on quality,  
         responsive web applications with exceptional user experience. I'm very passionate and dedicated to my work, 
          I love using my skill set to simplify work for enterprises and learning new technologies and design trends.
-         I have acquired the skills necessary to build a great and premium web Application.
+         I have acquired the skills necessary to build a great and premium web application.
          </p>
         </div>
       </div>
