@@ -4,7 +4,7 @@
   }
 }
 @mixin tablet {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1081px) {
     @content;
   }
 }
@@ -17,7 +17,7 @@
 .project{
   width: 100%;
 
-  .projectWrapper{
+  .projectWrapper{ 
     display: flex;
     align-items: center;
     justify-content: space-evenly;

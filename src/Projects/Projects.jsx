@@ -19,7 +19,7 @@ const Projects = () => {
     transition={{ type: 'linear' }} // Set the transition to linear
     className='projects'>
       <div className="projectsWrapper">
-        <h1 className='Title'>Projects</h1>
+        <h1 className='Title'>Projects.</h1>
       {projects.map((p) => (
         <Project key={p.id} project={p} />
       ))}

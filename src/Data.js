@@ -30,3 +30,37 @@ export const projects = [
 
   },
 ]
+
+export const skills = [
+
+  {
+    id:1,
+    logo: "/Assets/react.png",
+    name: "React",
+  },
+  {
+    id:2,
+    logo: "/Assets/javascript.png",
+    name: "javascript",
+  },
+  {
+    id:3,
+    logo: "/Assets/css3.png",
+    name: "css3",
+  },
+  {
+    id:4,
+    logo: "/Assets/git.png",
+    name: "git",
+  },
+  {
+    id:5,
+    logo: "/Assets/sass.png",
+    name: "sass",
+  },
+  {
+    id:6,
+    logo: "/Assets/tailwind.png",
+    name: "tailwind",
+  },
+]

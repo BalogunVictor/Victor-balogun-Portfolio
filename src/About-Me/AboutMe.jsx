@@ -1,5 +1,6 @@
 import './aboutMe.scss'
 import { motion } from 'framer-motion'
+import  Skills  from '../Skills/Skills';
 
 const AboutMe = () => {
 
@@ -29,6 +30,10 @@ const AboutMe = () => {
          I love using my skill set to simplify work for enterprises and learning new technologies and design trends.
          I have acquired the skills necessary to build a great and premium web application.
          </p>
+        </div>
+        <div className="mySkills">
+          <h1>My skills</h1>
+          <Skills />
         </div>
       </div>
     </motion.div>

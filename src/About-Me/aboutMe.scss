@@ -4,7 +4,7 @@
   }
 }
 @mixin tablet {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1095px) {
     @content;
   }
 }
@@ -23,12 +23,20 @@
     padding: 30px 0;
     font-weight: 900;
     font-size: 50px;
+
+    @include laptop{
+      font-size: 40px;
+    }
   }
 
   .aboutMeWrapper{
     display: flex;
     justify-content: center;
     padding-top: 30px;
+    @include tablet{
+      padding-top: 20px;
+    }
+
 
     .aboutMeimage{
       height: 300px;
@@ -36,6 +44,11 @@
 
       @include laptop{
         height: 350px;
+      }
+
+      @include tablet{
+      height: 300px;
+      width: 350px;
       }
 
       img{
@@ -53,6 +66,9 @@
       
       @include laptop{
         width: 450px; 
+      }
+      @include tablet{
+      line-height:30px;
       }
       
     }

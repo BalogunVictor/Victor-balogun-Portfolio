@@ -16,7 +16,7 @@ const Header = () => {
     <div className="header">
       <div className="headerWrapper">
 
-        <Link  to="/" className="logo"> victor.Balogun/></Link>
+        <Link  to="/" className="logo">  {'<victor.Balogun/>'} </Link>
 
         <div className={clicked ? "nav active" : "nav"}>
 
