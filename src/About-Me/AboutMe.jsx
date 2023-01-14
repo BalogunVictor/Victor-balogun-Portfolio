@@ -1,6 +1,12 @@
 import './aboutMe.scss'
 import { motion } from 'framer-motion'
-import  Skills  from '../Skills/Skills';
+import Skills from "../Skills/Skills";
+import { skills } from '../Data';
+
+
+import Glider from 'react-glider';
+import 'glider-js/glider.min.css';
+
 
 const AboutMe = () => {
 
@@ -21,21 +27,34 @@ const AboutMe = () => {
       >
       <h1 className='Title'>About Me.</h1>
       <div className="aboutMeWrapper">
-        <div className="aboutMeimage">
-          <img src="/Assets/victor.PNG" alt="victorImage" />
-        </div>
-        <div className="aboutMetext">
-        <p>Hi! my name is Victor Balogun, I'm a frontend developer based in Lagos, Nigeria.I've worked on quality,  
-        responsive web applications with exceptional user experience. I'm very passionate and dedicated to my work, 
-         I love using my skill set to simplify work for enterprises and learning new technologies and design trends.
-         I have acquired the skills necessary to build a great and premium web application.
-         </p>
+          <div className="aboutMeimage">
+            <img src="/Assets/victor.PNG" alt="victorImage" />
+          </div>
+          <div className="aboutMetext">
+          <p>Hi! my name is Victor Balogun, I'm a frontend developer based in Lagos, Nigeria.I've worked on quality,  
+          responsive web applications with exceptional user experience. I'm very passionate and dedicated to my work, 
+          I love using my skill set to simplify work for enterprises and learning new technologies and design trends.
+          I have acquired the skills necessary to build a great and premium web application.
+          </p>
+          </div>
         </div>
         <div className="mySkills">
-          <h1>My skills</h1>
-          <Skills />
+         <h1>My skills</h1>
+          <div className="mySkillsWrapper">
+            <Glider
+              draggable
+              hasArrows
+              hasDots
+              duration
+              slidesToShow={3}
+              slidesToScroll={1}
+              >
+              {skills.map((s) => (
+                <Skills key={s.id} skill={s} />
+              ))}
+            </Glider>
+          </div>
         </div>
-      </div>
     </motion.div>
   )
 }

@@ -41,26 +41,26 @@ export const skills = [
   {
     id:2,
     logo: "/Assets/javascript.png",
-    name: "javascript",
+    name: "javaScript",
   },
   {
     id:3,
     logo: "/Assets/css3.png",
-    name: "css3",
+    name: "CSS",
   },
   {
     id:4,
     logo: "/Assets/git.png",
-    name: "git",
+    name: "Git",
   },
   {
     id:5,
     logo: "/Assets/sass.png",
-    name: "sass",
+    name: "Sass",
   },
   {
     id:6,
     logo: "/Assets/tailwind.png",
-    name: "tailwind",
+    name: "Tailwind",
   },
 ]

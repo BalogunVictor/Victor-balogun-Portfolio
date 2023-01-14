@@ -1,15 +1,16 @@
-import "./Skills.scss";
-import { skills } from "../Data";
-import Skill from "../Skill/Skill";
+import './skills.scss';
 
-const Skills = () => {
+
+const Skills = ({ skill }) => {
   return (
-    <div className="skills">
-      <h1 className="title">Skills</h1>
-      <div className="skillWrapper">
-      {skills.map((s) => (
-        <Skill key={s.id} skill={s} />
-      ))}
+    <div className='skills'>
+      <div className="skillsWrapper">
+        <div className="skillsLogo">
+          <img src={skill.logo} alt="skillsLogo" />
+        </div>
+        <div className="skillsName">
+          {skill.name}
+        </div>
       </div>
     </div>
   )

@@ -20,6 +20,9 @@
 
   .mainWrapper{
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
     padding: 80px 0;
 
@@ -62,9 +65,14 @@
       .options{
         margin-bottom: 25px;
         align-items: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+        
+
 
         .option{
-          margin:0 10px;
+          
         }
       }
     }  
