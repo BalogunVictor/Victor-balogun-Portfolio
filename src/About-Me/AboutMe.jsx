@@ -4,8 +4,8 @@ import Skills from "../Skills/Skills";
 import { skills } from '../Data';
 
 
-import Glider from 'react-glider';
-import 'glider-js/glider.min.css';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 
 const AboutMe = () => {
@@ -15,6 +15,28 @@ const AboutMe = () => {
     enter: { opacity: 1},
     exit: { opacity: 0},
   };
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
+
   
   return (
     <motion.div
@@ -41,18 +63,18 @@ const AboutMe = () => {
         <div className="mySkills">
          <h1>My skills</h1>
           <div className="mySkillsWrapper">
-            <Glider
-              draggable
-              hasArrows
-              hasDots
-              duration
-              slidesToShow={3}
-              slidesToScroll={1}
-              >
+            <Carousel 
+            responsive={responsive}
+            showDots={true}
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={1500}
+            >
+
               {skills.map((s) => (
                 <Skills key={s.id} skill={s} />
               ))}
-            </Glider>
+            </Carousel>
           </div>
         </div>
     </motion.div>
