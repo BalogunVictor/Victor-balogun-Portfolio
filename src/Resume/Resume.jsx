@@ -20,6 +20,15 @@ const Resume = () => {
     exit: { opacity: 0},
   };
 
+  const style = {
+    border: '5px solid rgba(0, 0, 0, 0.3)',
+    height: '750px',
+    width: '750px',
+    // Adding media query..
+    '@media (max-width: 480px)': {
+      color: 'blue',
+    },
+  };
 
 
 
@@ -49,12 +58,7 @@ const Resume = () => {
         <h1>Resumé</h1>
 
         <div className='resumeViewer'
-        style={{
-          border: '5px solid rgba(0, 0, 0, 0.3)',
-          height: '750px',
-          width: '750px',
-          
-      }}
+        style={style}
         >
               <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.1.81/build/pdf.worker.min.js">
                 <Viewer fileUrl="/Assets/resume/VICTOR BALOGUN-CV.pdf"

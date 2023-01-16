@@ -18,11 +18,11 @@ const Main = () => {
                 <Link to='/resume' className="option">
                 <CustomButton>Resume</CustomButton>
                 </Link>
+                <Link to='/aboutme'>
+                <CustomButton>About</CustomButton>
+                </Link>
                 <Link to='/projects' className="option">
                 <CustomButton>Projects</CustomButton>
-                </Link>
-                <Link to='/aboutme'>
-                <CustomButton>About Me</CustomButton>
                 </Link>
               </div>
           </div>

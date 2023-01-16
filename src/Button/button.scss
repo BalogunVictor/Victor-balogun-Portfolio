@@ -77,10 +77,12 @@
       border: 2px solid black;
       box-shadow: -1px 2px 2px 2px black;
      
-
       //Change for the <button> element
-
       cursor: pointer;
+
+      @include mobile{
+        margin: 0;
+      }
   }
   
   &:hover {

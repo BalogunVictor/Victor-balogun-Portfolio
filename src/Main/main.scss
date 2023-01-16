@@ -16,25 +16,28 @@
 
 .main{
  width: 100%;
- margin-bottom: 30px;
-
+ 
   .mainWrapper{
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 80px 0;
+    padding: 30px 0;
 
       .mainHeader{
       font-family: 'Playfair Display', serif;
       font-weight: 900;
       font-size: 120px;
 
-      @include laptop{
-        font-size: 90px;
-      }
+        @include laptop{
+          font-size: 90px;
+        }
 
+        @include mobile{
+          font-size: 35px;
+          padding: 0 0;
+        }
       }
 
       .maintext{
@@ -42,15 +45,19 @@
         justify-content: center;
         margin-bottom: 25px;
         font-weight: 500;
+
         @include laptop{
           margin-bottom: 35px;
         }
-
-        
         
         h1{
           margin-bottom: 25px;
           font-size: 50px;
+
+          @include mobile{
+            font-size: 20px;
+          }
+
           @include laptop{
             font-size: 40px;
           }
@@ -59,8 +66,11 @@
         p{
           font-size: 20px;
           line-height: 35px;
+
+          @include mobile{
+            line-height: 25px;
+          }
         }
-       
       }
       .options{
         margin-bottom: 25px;
@@ -69,10 +79,13 @@
         grid-template-columns: auto auto auto;
         grid-gap: 20px;
         
-
+        @include mobile {
+          
+        }
 
         .option{
-          
+          display: inline-block;
+          margin: 0;
         }
       }
     }  

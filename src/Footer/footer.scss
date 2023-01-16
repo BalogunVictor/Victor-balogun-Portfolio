@@ -18,10 +18,16 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  position: fixed;
+  padding: 20px 0;
+
+
+  @include mobile{
+    display: inline;
+  }
 
   .footerWrapper{
   margin-right: 50px;
+
   @include laptop{
     margin-right: 80px;
   }
@@ -29,6 +35,33 @@
 
     .icons{
       margin-bottom: 20px;
+
+      @include mobile{
+        float: right;
+        position: relative;
+        text-align: left;
+      }
+      
+      ul{
+        list-style: none;
+
+        @include mobile{
+          position: relative;
+          left: 50%;
+          margin-right: 70px;
+        }
+
+        li{
+          list-style: none;
+
+          
+          @include mobile{
+            float: left;
+            position: relative;
+            padding: 0 15px;
+          }
+        }
+      }
 
       a{
         text-decoration: none;
@@ -49,6 +82,10 @@
       border-right: 5px solid black;
       height: 100px;
       margin-right: 12px;
+
+      @include mobile{
+        display: none;
+      }
     } 
   }
 }

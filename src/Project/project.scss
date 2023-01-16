@@ -23,12 +23,23 @@
     justify-content: space-evenly;
     height: 300px;
 
+
+    @include mobile{
+      display: block;
+      height: 600px;
+  
+    }
+
     .projectImage{
       height: 180px;
       width: 350px;
       
       @include laptop{
         width: 300px;
+      }
+
+      @include laptop{
+        padding-left: 10px;
       }
 
       img{
@@ -43,16 +54,23 @@
       line-height: 30px;
 
       h1{
-        padding-bottom: 20px;
+        padding: 20px;
       }
+
+      
 
       .about,.viewApp {
         display: block;
         width: 700px;
         font-weight: 500;
         font-size: 20px;
+
         @include laptop{
           width: 500px;
+        }
+        @include mobile{
+          width: 300px;
+          padding-left: 15px;
         }
       }
     }
@@ -78,5 +96,9 @@
     background-color: black;
     justify-content: space-around;
     border: none;
+
+    @include mobile{
+      display: none;
+    }
   }
 }

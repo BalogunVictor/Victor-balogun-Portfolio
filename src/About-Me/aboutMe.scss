@@ -18,6 +18,10 @@
   width: 100%;
   margin:0 20px;
 
+  @include mobile{
+    margin:0 0px;
+  }
+
   .Title{
     margin: 0px 100px;
     padding: 15px 0;
@@ -27,6 +31,11 @@
     @include laptop{
       font-size: 40px;
     }
+
+    @include mobile{
+      margin: 0px 20px;
+      padding: 10px 0;
+    }
   }
 
   .aboutMeWrapper{
@@ -34,7 +43,12 @@
     justify-content: center;
     padding-top: 10px;
     @include tablet{
-      padding-top: 20px;
+      padding: 20px 20px;
+    }
+
+    @include mobile{
+      display: block;
+      padding-top: 0px;
     }
 
 
@@ -70,6 +84,12 @@
       @include tablet{
       line-height:30px;
       }
+
+      @include mobile{
+        width: 300px;
+        padding: 30px;
+        text-align: center;
+      }
       
     }
   }
@@ -84,13 +104,20 @@
     h1{
       padding: 20px 0;
     }
+
+    @include mobile{
+      margin-bottom: 30px;
+    }
     
     
 
     .mySkillsWrapper{
       width:700px;
       text-align: center;
-      
+
+      @include mobile{
+        width: 350px;
+      } 
     }
   }
 

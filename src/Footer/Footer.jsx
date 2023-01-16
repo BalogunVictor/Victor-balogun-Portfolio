@@ -9,20 +9,20 @@ const Footer = () => {
       <div className="footerWrapper"> 
       <div className="icons">
       <ul>
-        <li style={{listStyle: 'none' }}>
-          <a href="https://github.com/agboolaidris">
+        <li>
+          <a href="https://github.com/BalogunVictor">
             <AiOutlineGithub style={{fontSize: '25px'}} className='icon'/>
           </a>
         </li>
 
-        <li style={{listStyle: 'none'}}>
-          <a href="https://www.linkin.com/in/balogun-victor-moyinoluwa">
+        <li >
+          <a href="https://www.linkedin.com/in/balogun(moyinoluwa)victor">
             <BsLinkedin style={{fontSize: '25px'}} className='icon'/>
           </a>
         </li>
 
-        <li style={{listStyle: 'none'}}>
-          <a href="https://github.com/agboolaidris">
+        <li>
+          <a href="https://twitter.com/blvckaddiict">
             <AiOutlineTwitter style={{fontSize: '25px'}} className='icon'/>
           </a>
         </li>

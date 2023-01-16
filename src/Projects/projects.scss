@@ -20,6 +20,10 @@
   .projectsWrapper{
     display: block;
     margin: 0px 70px;
+
+    @include mobile{
+      margin: 0px 15px;
+    }
     
     .Title{
       margin: 0px 100px;
@@ -29,6 +33,11 @@
 
       @include laptop{
         font-size: 40px;
+        margin: 0px 10 px;
+      }
+
+      @include mobile {
+        margin: 0px 5px;
       }
     }
 

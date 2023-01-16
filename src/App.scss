@@ -2,6 +2,28 @@
   font-family: 'Playfair Display', serif;
 }
 
+html,body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
 .app{
   
   color: black;
@@ -19,7 +41,14 @@
     height: 280px;
     bottom: 0;
     right: 0;
+
+    @include mobile{
+      width: 100%;
+      position: relative;
+    }
   }
+
+
 
 }
 
