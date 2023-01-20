@@ -41,14 +41,12 @@ html,body{
     height: 280px;
     bottom: 0;
     right: 0;
+    z-index: 99999;
 
     @include mobile{
       width: 100%;
       position: relative;
     }
   }
-
-
-
 }
 

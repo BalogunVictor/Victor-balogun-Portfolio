@@ -1,13 +1,6 @@
 export const projects = [
   {
     id:1,
-    images: "/Assets/royalClothing.png",
-    about: " An E-commerce app with a registration and login process with Firebase for authentication, Implementation of a means of payment with Stripe as a payment, Navigation between categories and products, Shopping cart management Responsive UI Design ",
-    name: "Royal clothing",
-    link: "https://live-royal-clothing.netlify.app/",
-  },
-  {
-    id:2,
     images: "/Assets/wikkyChat.png",
     about: "A Chatting app with registration and login process with Firebase for authentication, Search User function, Sending a real-time chat messages, Responsive UI Design. ",
     name: "Wikky Chat",
@@ -15,12 +8,22 @@ export const projects = [
 
   },
   {
-    id:3,
-    images: "/Assets/youtube.png",
-    about: " A Youtube clone app with Youtube UI, search field that filters videos, menu minimization function, responsive UI",
-    name: "Youtube clone app",
+    id:2,
+    images: "/Assets/royalClothing.png",
+    about: " An E-commerce app with a registration and login process with Firebase for authentication, Implementation of a means of payment with Stripe as a payment, Navigation between categories and products, Shopping cart management Responsive UI Design ",
+    name: "Royal clothing",
     link: "https://live-royal-clothing.netlify.app/",
   },
+  
+  {
+    id:3,
+    images: "/Assets/expenseTracker.png",
+    about: "An application that helps to keep an accurate record of your money inflow and outflow.",
+    name: "Expense Tracker",
+    link: "https://live-expense-tracker.netlify.app/",
+
+  },
+  
   {
     id:4,
     images: "/Assets/hoobank.png",
@@ -31,11 +34,10 @@ export const projects = [
   },
   {
     id:5,
-    images: "/Assets/expenseTracker.png",
-    about: "An application that helps to keep an accurate record of your money inflow and outflow.",
-    name: "Expense Tracker",
-    link: "https://live-expense-tracker.netlify.app/",
-
+    images: "/Assets/youtube.png",
+    about: " A Youtube clone app with Youtube UI, search field that filters videos, menu minimization function, responsive UI",
+    name: "Youtube clone app",
+    link: "https://live-youtube-clone.netlify.app/",
   },
 ]
 
